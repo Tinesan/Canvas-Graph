@@ -1,0 +1,31 @@
+{
+    "players": [
+        { "MON": 30 },
+        { "TUE": 25 },
+        { "WED": 45 },
+        { "THU": 85 },
+        { "FRI": 61 },
+        { "SAT": 15 },
+        { "SUN": 30 }
+    ],
+    "tournaments": [
+        { "JAN": 450 },
+        { "FEB": 620 },
+        { "MAR": 490 },
+        { "APR": 560 },
+        { "MAY": 380 },
+        { "JUN": 730 },
+        { "JUL": 760 },
+        { "AUG": 450 },
+        { "SEP": 620 },
+        { "OCT": 490 },
+        { "NOV": 560 },
+        { "DEC": 380 }
+    ],
+    "info": [
+        { "New Players": 58 },
+        { "Revisited": 75 },
+        { "Commented": 28 },
+        { "Active Player": 97 }
+    ]
+}

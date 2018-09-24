@@ -1,0 +1,61 @@
+.graps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $m-30;
+    background-color: $c-graphs-bg;
+
+    .active-players,
+    .active-tournaments,
+    .recent-players,
+    .player-statistics,
+    .chart-container,
+    .d3-js {
+        width: 50%;
+        min-width: 800px;
+        min-height: 300px;
+    }
+    h2 {
+        font-size: 1.3rem;
+        color: $c-font-main-title;
+    }
+}
+.recent-players {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PT Sans', sans-serif;
+    .recent-users {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .recent-user {
+        display: flex;
+        align-items: center;
+        min-width: 250px;
+        width: 33%;
+        margin-top: 30px;
+        .user-info-name {
+            font-size: 1.1rem;
+            color: $c-font-main-title;
+        }
+        .user-info-country {
+            color: $c-font-main-title * 1.5;
+        }
+    }
+    .user-image {
+        width: 20%;
+        margin: 0 20px 0 10px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.d3-js {
+    .bar {
+        display: inline-block;
+        width: 20px;
+        background-color: teal;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+main {
+    flex-grow: 2;
+    flex-shrink: 2;
+    width: calc(100% - $w-h-aside);
+}
+.main-title {
+    display: flex;
+    align-items: center;
+    height: $w-h-aside;
+    border-bottom: 1px solid $c-font-header;
+    color: $c-font-main-title;
+    p {
+        margin-left: $m-30;
+        font-size: 1.3rem;
+    }
+    i {
+        margin-left: 10px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        &:hover {
+            color: $c-font-main-title * 0.5;
+        }
+    }
+}

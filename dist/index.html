@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">+ Add User</a></li>
+                <li><a href="#">User Preferences</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <input type="text">
+
+        </div>
+        <div class="user">
+            <div class="avatar">
+                <img src="images/Avatar.png" alt="avatar">
+                <span>2</span>
+            </div>
+            <div class="profile">
+                <p>Aaron Sananes</p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+
+        </div>
+    </header>
+    <div class="wrapper">
+        <aside>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fas fa-chalkboard"></i></li>
+                    <li><i class="far fa-user"></i></li>
+                    <li><i class="far fa-edit"></i></li>
+                    <li><i class="far fa-calendar-alt"></i></li>
+                    <li><i class="far fa-sticky-note"></i></li>
+                    <li><i class="far fa-comments"></i></li>
+                    <li><i class="fas fa-chart-line"></i></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="main-title">
+                <p>Dashbords <i class="fas fa-cog"></i></p>
+            </section>
+            <section class="stats">
+                <div class="online">
+                    <p class="num">267</p>
+                    <p>Online Players</p>
+                </div>
+                <div class="hours">
+                    <p class="num">1890</p>
+                    <p>Hours Played</p>
+                </div>
+                <div class="tournaments">
+                    <p class="num">22</p>
+                    <p>New Tournaments</p>
+                </div>
+                <div class="fails">
+                    <p class="num">16</p>
+                    <p>Lifetime Fails</p>
+                </div>
+                <div class="comments">
+                    <p class="num">6544</p>
+                    <p>Comments</p>
+                </div>
+                <div class="games">
+                    <p class="num">568</p>
+                    <p>Games Played</p>
+                </div>
+            </section>
+            <section class="graps">
+                <div class="active-players">
+                    <h2>Active Players</h2>
+                    <div id="active-players-div"> <canvas id="active-players"></canvas>
+                        <span id="main-span-players"></span></div>
+                </div>
+                <div class='active-tournaments'>
+                    <h2>Active Tournaments</h2>
+                    <div id="active-tournaments-div"> <canvas id="active-tournaments"></canvas>
+                        <span id="main-span-tournaments"></span></div>
+
+                </div>
+                <div class="recent-players">
+                    <h2>Recent Players</h2>
+                    <div class="recent-users">
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user1.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Aaron Sananes</p>
+                                <p class="user-info-country">United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user2.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">John Mac</p>
+                                <p class="user-info-country">United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user3.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Daryl Ginn</p>
+                                <p class="user-info-country">United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user4.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Jummy Mars</p>
+                                <p class="user-info-country">Australia</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user5.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Lindsay Scott</p>
+                                <p class="user-info-country">South Africa</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user6.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Erik Henebratt</p>
+                                <p class="user-info-country">Sweden</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user7.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Aaron Sananes</p>
+                                <p class="user-info-country">United Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user8.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">Erik Henebratt</p>
+                                <p class="user-info-country">Sweden</p>
+                            </div>
+                        </div>
+                        <div class="recent-user">
+                            <div class="user-image"><img src="images/user9.png" alt="user-foto"></div>
+                            <div class="user-info">
+                                <p class="user-info-name">John Mac</p>
+                                <p class="user-info-country">United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-statistics">
+                    <h2>Players Statistics</h2>
+                    <canvas id="player-statistics"></canvas>
+                </div>
+
+                <div style="padding: 50px 50px 0 0" class="chart-container">
+                    <h2>ChartJS</h2>
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div style="padding: 50px 50px 0 0" class="d3-js">
+                    <h2>D3.JS</h2>
+                </div>
+
+
+
+
+
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

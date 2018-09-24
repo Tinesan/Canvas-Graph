@@ -1,0 +1,42 @@
+html {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    padding-top: $header-height;
+}
+#main-span-players,
+#main-span-tournaments {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 60px;
+    height: 25px;
+    margin-left: -35px;
+    margin-top: -35px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #4e7d7c;
+    border-radius: 3px;
+    color: white;
+}
+#active-players-div,
+#active-tournaments-div {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+#active-players {
+    width: 800px;
+    height: 300px;
+}
